@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="capstone.androiduserbadgetplanner.mainInterface">
+    <item
+        android:id="@+id/saving_summary"
+        android:orderInCategory="100"
+        android:title="@string/summary_of_savings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/expenses_summary"
+        android:orderInCategory="100"
+        android:title="@string/summary_of_expenses"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/change_pin"
+        android:orderInCategory="100"
+        android:title="@string/change_pin_code"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/daily_tip"
+        android:orderInCategory="100"
+        android:title="@string/saving_tip"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="@string/action_exit"
+        app:showAsAction="never" />
+</menu>

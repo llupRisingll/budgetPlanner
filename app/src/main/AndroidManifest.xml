@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="capstone.androiduserbadgetplanner">
+
+    <application
+        android:name=".CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".mainInterface"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".addExpenses"
+            android:label="Add Expenses"
+            android:parentActivityName=".mainInterface"
+            android:theme="@style/ActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="capstone.androiduserbadgetplanner.mainInterface" />
+        </activity>
+        <activity
+            android:name=".CustomPinActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".tips"
+            android:label="A Saving Tip"
+            android:parentActivityName=".mainInterface"
+            android:theme="@style/ActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="capstone.androiduserbadgetplanner.mainInterface" />
+        </activity>
+
+        <activity
+            android:name=".saving_summary"
+            android:label="Saving Summary"
+            android:parentActivityName=".mainInterface"
+            android:theme="@style/ActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="capstone.androiduserbadgetplanner.mainInterface" />
+        </activity>
+
+        <activity
+            android:name=".expenses_summary"
+            android:label="Expenses Summary"
+            android:parentActivityName=".mainInterface"
+            android:theme="@style/ActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="capstone.androiduserbadgetplanner.mainInterface" />
+        </activity>
+    </application>
+
+</manifest>

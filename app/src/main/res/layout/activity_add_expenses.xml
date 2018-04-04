@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_expenses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="capstone.androiduserbadgetplanner.addExpenses">
+
+
+    <TextView
+        android:text="Today's Expenses:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textlayout"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="PHP:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/phpExpenses"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_weight="0.11"
+            android:gravity="center"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textColor="?attr/colorAccent"
+            android:hint="@string/placeholding_value"
+            android:id="@+id/inputExpenses"
+            android:layout_weight="0.06" />
+
+        <Spinner
+            android:layout_width="140dp"
+            android:layout_height="69dp"
+            android:id="@+id/categories"
+            android:entries="@array/category_list"
+            android:prompt="@string/category_prompt" />
+    </LinearLayout>
+
+    <Button
+        android:text="Add Expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addExpenses"
+        android:elevation="0dp"
+        android:layout_weight="0.14"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/savingContainer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:onClick="addButtonClicked" />
+
+    <TextView
+        android:text="Today's Saving:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight="0.08"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:id="@+id/savingContainer"
+        android:weightSum="1"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:text="PHP:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/phpSaving"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_weight="0.23"
+            android:gravity="center"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="56dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:textColor="?attr/colorAccent"
+            android:hint="@string/placeholding_value"
+            android:id="@+id/inputSavings"
+            android:layout_weight="0.14" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
